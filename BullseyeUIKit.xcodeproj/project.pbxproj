@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1D89AE274E3BE600505459 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D89AD274E3BE600505459 /* AboutViewController.swift */; };
+		CE1D89B1274E5F5A00505459 /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = CE1D89B0274E5F5A00505459 /* Bullseye.html */; };
+		CE1D89B5274E5FB800505459 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1D89B4274E5FB800505459 /* WebKit.framework */; };
+		CE1D89B8274F85EF00505459 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D89B7274F85EF00505459 /* HighScoresViewController.swift */; };
+		CE1D89BF274FBFF900505459 /* HighScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D89BE274FBFF900505459 /* HighScoreItem.swift */; };
+		CE1D89C82751179E00505459 /* PersistencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D89C72751179E00505459 /* PersistencyHelper.swift */; };
+		CE1D89CD27511EAC00505459 /* EditHighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D89CC27511EAC00505459 /* EditHighScoreViewController.swift */; };
 		CE901E7C27467F93005499A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE901E7B27467F93005499A8 /* AppDelegate.swift */; };
 		CE901E7E27467F93005499A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE901E7D27467F93005499A8 /* SceneDelegate.swift */; };
 		CE901E8027467F93005499A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE901E7F27467F93005499A8 /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1D89AD274E3BE600505459 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CE1D89B0274E5F5A00505459 /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Bullseye.html; sourceTree = "<group>"; };
+		CE1D89B4274E5FB800505459 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CE1D89B7274F85EF00505459 /* HighScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
+		CE1D89BE274FBFF900505459 /* HighScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreItem.swift; sourceTree = "<group>"; };
+		CE1D89C72751179E00505459 /* PersistencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyHelper.swift; sourceTree = "<group>"; };
+		CE1D89CC27511EAC00505459 /* EditHighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHighScoreViewController.swift; sourceTree = "<group>"; };
 		CE901E7827467F93005499A8 /* BullseyeUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullseyeUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE901E7B27467F93005499A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE901E7D27467F93005499A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +45,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D89B5274E5FB800505459 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1D89B3274E5FB800505459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE1D89B4274E5FB800505459 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE901E6F27467F93005499A8 = {
 			isa = PBXGroup;
 			children = (
 				CE901E7A27467F93005499A8 /* BullseyeUIKit */,
 				CE901E7927467F93005499A8 /* Products */,
+				CE1D89B3274E5FB800505459 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +80,16 @@
 		CE901E7A27467F93005499A8 /* BullseyeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE1D89B0274E5F5A00505459 /* Bullseye.html */,
 				CE901E7B27467F93005499A8 /* AppDelegate.swift */,
 				CE901E7D27467F93005499A8 /* SceneDelegate.swift */,
 				CE901E7F27467F93005499A8 /* ViewController.swift */,
+				CE1D89AD274E3BE600505459 /* AboutViewController.swift */,
 				CE901E8127467F93005499A8 /* Main.storyboard */,
+				CE1D89CC27511EAC00505459 /* EditHighScoreViewController.swift */,
+				CE1D89B7274F85EF00505459 /* HighScoresViewController.swift */,
+				CE1D89BE274FBFF900505459 /* HighScoreItem.swift */,
+				CE1D89C72751179E00505459 /* PersistencyHelper.swift */,
 				CE901E8427467F95005499A8 /* Assets.xcassets */,
 				CE901E8627467F95005499A8 /* LaunchScreen.storyboard */,
 				CE901E8927467F95005499A8 /* Info.plist */,
@@ -125,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE901E8827467F95005499A8 /* LaunchScreen.storyboard in Resources */,
+				CE1D89B1274E5F5A00505459 /* Bullseye.html in Resources */,
 				CE901E8527467F95005499A8 /* Assets.xcassets in Resources */,
 				CE901E8327467F93005499A8 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D89B8274F85EF00505459 /* HighScoresViewController.swift in Sources */,
+				CE1D89BF274FBFF900505459 /* HighScoreItem.swift in Sources */,
+				CE1D89C82751179E00505459 /* PersistencyHelper.swift in Sources */,
 				CE901E8027467F93005499A8 /* ViewController.swift in Sources */,
 				CE901E7C27467F93005499A8 /* AppDelegate.swift in Sources */,
+				CE1D89AE274E3BE600505459 /* AboutViewController.swift in Sources */,
 				CE901E7E27467F93005499A8 /* SceneDelegate.swift in Sources */,
+				CE1D89CD27511EAC00505459 /* EditHighScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
